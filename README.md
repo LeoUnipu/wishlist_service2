@@ -19,8 +19,8 @@ Aplikacija je osmišljena kako bi se lako mogla integrirati u poslovna okruženj
 1. **Klona projekta:**
    - Klonirajte ovaj repozitorij na svoje računalo:
      ```bash
-     git clone https://github.com/korisnik/wishlist-app.git
-     cd wishlist-app
+     git clone https://github.com/LeoUnipu/wishlist_service2.git
+     cd wishlist_service2
      ```
 
 2. **Instalacija ovisnosti:**

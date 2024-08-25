@@ -20,7 +20,7 @@ Aplikacija je osmišljena kako bi se lako mogla integrirati u poslovna okruženj
    - Klonirajte ovaj repozitorij na svoje računalo:
      ```bash
      git clone https://github.com/LeoUnipu/wishlist_service2.git
-     cd wishlist_service2
+     cd Documents/GitHub/wishlist_service2
      ```
 
 2. **Instalacija ovisnosti:**
@@ -49,7 +49,7 @@ Aplikacija je osmišljena kako bi se lako mogla integrirati u poslovna okruženj
 2. **Pokretanje Docker kontejnera:**
    - Pokrenite aplikaciju unutar Docker kontejnera s trajnim volumenom za bazu podataka:
      ```bash
-     docker run -d -p 5000:5000 -v C:\Users\leohr\Desktop\wishlist_service2\data:/app/data my-flask-app
+     docker run -d -p 5000:5000 -v %USERPROFILE%\Documents\GitHub\wishlist_service2\data:/app/data my-flask-app
      ```
 
 3. **Pristup aplikaciji:**

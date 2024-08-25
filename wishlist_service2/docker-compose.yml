@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  web:
+    image: my-flask-app:latest
+    build:
+      context: .
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./data:/app/data  
+    environment:
+      - DATABASE_URL=/app/data/wishlist.sqlite
+
+volumes:
+  db_data:

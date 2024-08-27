@@ -12,7 +12,7 @@ Aplikacija je osmišljena kako bi se lako mogla integrirati u poslovna okruženj
 - **Brisanje stavki**: Stavke se mogu ukloniti s popisa kada više nisu relevantne.
 - **Označavanje kao kupljeno**: Korisnici mogu označiti stavke kao kupljene ili nekupljene.
 - **Prikaz statistika**: Aplikacija prikazuje ukupni broj stavki, broj kupljenih stavki i ukupnu potrošnju.
-- **Pretraga i filtriranje**: Stavke se mogu pretraživati po ključnim riječima, te filtrirati prema statusu kupljeno/nekupljeno i prema rasponu cijena.
+- **Pretraga i filtriranje**: Stavke se mogu pretraživati po ključnim riječima, te filtrirati prema statusu kupljeno/nekupljeno, prioritetima i prema rasponu cijena.
 
 ## Pokretanje Aplikacije Lokalno
 

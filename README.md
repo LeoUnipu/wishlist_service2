@@ -1,7 +1,7 @@
 
 ## Opis Projekta
 
-Ova aplikacija je "Wishlist" aplikacija koja omogućuje korisnicima praćenje popisa želja i njihovih prioriteta. Korisnici mogu dodavati nove stavke na popis, uređivati postojeće, brisati ih, označavati kao kupljene i pregledavati statistike. Aplikacija koristi SQLite bazu podataka za spremanje podataka o stavkama na popisu. 
+Ova aplikacija je "Popis želja" aplikacija koja omogućuje korisnicima praćenje popisa želja i njihovih prioriteta. Korisnici mogu dodavati nove stavke na popis, uređivati postojeće, brisati ih, označavati kao kupljene i pregledavati statistike. Aplikacija koristi SQLite bazu podataka za spremanje podataka o stavkama na popisu. 
 
 Aplikacija je osmišljena kako bi se lako mogla integrirati u poslovna okruženja, posebno u sektorima gdje je potrebno praćenje i organizacija želja ili proizvoda, kao što su maloprodaja, e-trgovina ili čak osobna financijska planiranja.
 

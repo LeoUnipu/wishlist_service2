@@ -89,7 +89,7 @@ def update_item(item_id):
             item.opis = request.form['opis']
             item.cijena = float(request.form['cijena'])
             item.prioritet = int(request.form['prioritet'])
-            item.kupljeno = 'kupljeno' in request.form  # Ako je checkbox označen
+            item.kupljeno = 'kupljeno' in request.form 
             return redirect(url_for('index'))
         return render_template('update_item.html', item=item)
     

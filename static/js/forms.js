@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!naziv || !cijena) {
             alert("Sva polja moraju biti popunjena!");
-            event.preventDefault();  // Spriječi slanje forme
+            event.preventDefault();  
         }
     });
 });

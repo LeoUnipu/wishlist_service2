@@ -13,13 +13,12 @@
         <canvas id="statsChart" width="400" height="200"></canvas>
         
         <script>
-            // Prosledi podatke iz Flask-a kao globalne varijable
             window.statsData = {
                 totalItems: {{ total_items }},
                 boughtItems: {{ bought_items }},
                 totalSpent: {{ total_spent }}
             };
-            console.log('Stats Data:', window.statsData); // Proveri da li su podaci ispravni
+            console.log('Stats Data:', window.statsData); 
         </script>
 
         <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

@@ -11,33 +11,29 @@
     <div class="container">
         <h1 class="mt-4">Popis želja</h1>
         
-        <!-- Gornji red sa dugmadima i formom -->
         <div class="d-flex justify-content-between align-items-center mb-3">
             <div>
-                <!-- Dugmad za dodavanje stavki i pregled statistike -->
                 <a href="{{ url_for('add_item') }}" class="btn btn-primary btn-sm">Dodaj novu stavku</a>
                 <a href="{{ url_for('stats') }}" class="btn btn-secondary btn-sm">Pregledajte statistiku</a>
             </div>
     
-            <!-- Forma za pretragu i filtriranje -->
             <form method="GET" action="{{ url_for('index') }}" class="d-flex align-items-center">
-                <!-- Polje za pretragu -->
+
                 <input type="text" class="form-control form-control-sm me-2" name="search" placeholder="Pretraživanje..." value="{{ request.args.get('search', '') }}" style="width: 150px; height: 32px;">
     
-                <!-- Filtriranje prema statusu kupljeno/nekupljeno -->
+
                 <select class="form-select form-select-sm me-2" name="purchase_filter" style="width: 120px; height: 32px;">
                     <option value="" {% if request.args.get('purchase_filter') == '' %}selected{% endif %}>Sve</option>
                     <option value="bought" {% if request.args.get('purchase_filter') == 'bought' %}selected{% endif %}>Kupljeno</option>
                     <option value="not_bought" {% if request.args.get('purchase_filter') == 'not_bought' %}selected{% endif %}>Nije kupljeno</option>
                 </select>
     
-                <!-- Filtriranje prema cijeni -->
                 <input type="number" class="form-control form-control-sm me-2" name="min_price" placeholder="Min cijena" value="{{ request.args.get('min_price', '') }}" style="width: 100px; height: 32px;">
                 <input type="number" class="form-control form-control-sm me-2" name="max_price" placeholder="Max cijena" value="{{ request.args.get('max_price', '') }}" style="width: 100px; height: 32px;">
                 <input type="number" class="form-control form-control-sm me-2" name="priority" placeholder="Prioritet" value="{{ request.args.get('priority', '') }}" style="width: 100px; height: 32px;">
-                <!-- Dugme za primjenu filtera -->
+
               <form method="GET" action="{{ url_for('index') }}" class="d-flex align-items-center">
-    <!-- Ostali input elementi -->
+
     
     <button class="btn btn-primary btn-sm me-2" type="submit" style="height: 32px;">Pretraži</button>
     <a href="{{ url_for('index') }}" class="btn btn-primary btn-sm" style="height: 32px;">Poništi filtre</a>
@@ -46,7 +42,7 @@
             </form>
         </div>
     
-        <!-- Tablica za stavke -->
+
         <table class="table table-striped">
             <thead>
                 <tr>

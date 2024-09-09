@@ -29,7 +29,7 @@ def index():
         if max_price:
             query = query.filter(lambda s: s.cijena <= float(max_price))
 
-        # Filtriranje po tačnom prioritetu
+        # Filtriranje po točnom prioritetu
         if priority:
             query = query.filter(lambda s: s.prioritet == int(priority))
 
